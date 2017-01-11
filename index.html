@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.30.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.30.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.1.0/mapbox-gl-compare.js'></script>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.1.0/mapbox-gl-compare.css' type='text/css' />
+
+<h1>Hi Just Testing</h1>
+<p>The dead sea is in great danger</p>
+<h4>Look at this map</h4>
+
+<div id='before' class='map'></div>
+<div id='after' class='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoib3JpZmlzaGVyIiwiYSI6ImNpdGdlMnF4bDAwaTcyb21ramllN3Fob3oifQ.ZFKAmdNI1Zp2Hh2edrlTSA';
+var beforeMap = new mapboxgl.Map({
+    container: 'before',
+    style: 'mapbox://styles/orifisher/cixqr2l21003j2soju6apkynw',
+    center: [35.473759, 31.380302],
+    zoom: 8.8
+});
+
+var afterMap = new mapboxgl.Map({
+    container: 'after',
+    style: 'mapbox://styles/orifisher/cixqqyqi3003v2so9eepb2sky',
+    center: [35.473759, 31.380302],
+    zoom: 8.8
+});
+
+var map = new mapboxgl.Compare(beforeMap, afterMap, {
+    // Set this to enable comparing two maps by mouse movement:
+    // mousemove: true
+});
+
+</script>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<p>The dead sea is in great danger</p>
+<p>The dead sea is in great danger</p>
+
+<p>The dead sea is in great danger</p>
+<p>The dead sea is in great danger</p>
+
+
+
+</body>
+</html>
